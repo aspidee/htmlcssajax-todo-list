@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- FONT: MONTSERRAT -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,700i" rel="stylesheet">
+  <!-- CSS: FONTAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS: MY CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- JS: JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JS: MOMENTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- JS: HANDLEBARS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
+  <!-- TEMPLATE Handlebars -->
+  <script id="card_template" type="text/x-handlebars-template">
+    <div class="card">
+      <ul>
+        <li class="card_delete"><b>X</b></li>
+        <li class="card_id">{{ cardId }}</li>
+        <li class="card_text">{{ cardTxt }}</li>
+        <li class="card_edit"><i class="far fa-edit"></i></li>
+      </ul>
+    </div>
+  </script>
+  <!-- JS: MY SCRIPT -->
+  <script src="script.js" charset="utf-8"></script>
+  <!-- IMG: ICON -->
+  <link rel="shortcut icon" href="ico.ico">
+  <title>TO DO LIST</title>
+</head>
+  <body>
+    <header>
+      <h1>T O D O - L I S T</h1>
+      <div class="cardbar">
+        <input type="text" class="input" placeholder="Inserisci qui il testo...">
+        <button type="button" class="btn">INSERISCI CARD</button>
+      </div>
+    </header>
+    <div class="card-container">
+
+    </div>
+  </body>
+</html>
